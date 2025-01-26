@@ -87,6 +87,8 @@ app.put('/api/phone/:id',(request,response) => {
   const newdata=request.body
   const id=request.params.id
   data = data.map(i=>i.id===id?newdata:i)
+  console.log(id,'id')
+  console.log(newdata,'newdata')
   response.json(data)
 })
 
