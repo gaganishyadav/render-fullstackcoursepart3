@@ -1,0 +1,52 @@
+GET http://localhost:3001/api/phone
+
+###
+DELETE  http://localhost:3001/api/phone/1
+
+###
+
+POST  http://localhost:3001/api/phone
+Content-Type: application/json
+
+{
+    "name":"Jeremy",
+    "number":"1"
+}
+
+###
+
+PUT  http://localhost:3001/api/phone/679a4ea3eaf9024f9fa0fba4
+Content-Type: application/json
+
+{
+    "name":"Jeremy",
+    "number":"12"
+}
+
+###
+
+GET https://render-fullstackcoursepart3.onrender.com/api/phone
+
+###
+DELETE  https://render-fullstackcoursepart3.onrender.com/api/phone/35
+
+###
+
+POST  https://render-fullstackcoursepart3.onrender.com/api/phone
+Content-Type: application/json
+
+{
+    "name":"Q",
+    "number":"1"
+}
+
+###
+
+PUT  https://render-fullstackcoursepart3.onrender.com/api/phone/35
+Content-Type: application/json
+
+{
+    "id": "35",
+    "name":"Q",
+    "number":"8"
+}
